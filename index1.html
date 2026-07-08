@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนตัวของฉัน | My Digital Profile</title>
+    <style>
+        /* ตั้งค่าพื้นฐานและการจัดวางกึ่งกลางหน้าจอ */
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* การ์ดโปรไฟล์ */
+        .profile-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* รูปภาพโปรไฟล์ทรงกลมพร้อมกรอบเรืองแสง */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+            margin-bottom: 20px;
+        }
+
+        /* ส่วนข้อมูลตัวอักษร */
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 10px 0 5px 0;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #3498db;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .bio-section {
+            background: #f8fafc;
+            padding: 18px 20px;
+            border-radius: 12px;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .bio-section p {
+            font-size: 15px;
+            color: #5a6c7d;
+            line-height: 1.8;
+            margin: 8px 0;
+        }
+
+        /* ปุ่มลิงก์เชื่อมโยงภายนอก */
+        .btn-link {
+            display: block;
+            background: #2563eb;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background: #1d4ed8;
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="S__23461916.jpg" alt="รูปโปรไฟล์ของคุณวิว" class="profile-img">
+        
+        <h1>พรไพลิน ทองโฉม</h1>
+        <p class="tagline">Hello, I'm View ✨</p>
+        
+        <div class="bio-section">
+            <p><strong>ชื่อเล่น:</strong> วิว (View)</p>
+            <p><strong>อายุ:</strong> 21 ปี</p>
+            <p><strong>การศึกษา:</strong> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.)</p>
+            <p><strong>คณะ/วิทยาลัย:</strong> วิทยาลัยเทคโนโลยีอุตสาหกรรม (วทอ.)</p>
+        </div>
+
+        <a href="https://www.kmutnb.ac.th" target="_blank" class="btn-link">🔗 เว็บไซต์มหาวิทยาลัย มจพ.</a>
+    </div>
+
+</body>
+</html>
